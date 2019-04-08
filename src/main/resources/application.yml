@@ -1,0 +1,20 @@
+#默认使用配置
+spring:
+  profiles:
+    active: dev
+ 
+---
+
+#开发配置
+spring:
+  profiles: dev
+
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://192.168.0.93:1433; DatabaseName=OMS
+    username: sa
+    password: sa123456  
+    
+  
+server:
+    port: 8085    
